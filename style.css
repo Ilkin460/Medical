@@ -1,0 +1,14 @@
+:root { --mavi: #6bc2f1 }
+
+header { background: url('img/headerbg.jpg') 60% 50%/cover }
+#art1 { background: url('img/art1.jpg') center/cover; }
+#art2 { background: url('img/art2.jpg') center/cover; }
+
+#art1:hover, #art2:hover { opacity: .5; }
+#art1:hover h3, #art2:hover h3 { display: initial!important }
+
+.vh-50 { height: 50vh }
+.bg-mavi { background-color: var(--mavi) }
+.bg-boz { background-color: #f1f1f1 }
+.text-mavi { color: var(--mavi) }
+
