@@ -12,3 +12,86 @@ header { background: url('img/headerbg.jpg') 60% 50%/cover }
 .bg-boz { background-color: #f1f1f1 }
 .text-mavi { color: var(--mavi) }
 
+.carousel-caption { 
+    position: static;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.carousel-caption h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.carousel-caption p {
+    font-size: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.carousel-indicators { 
+    position: static;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel-indicators [data-bs-target] { 
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+.carousel-indicators .active {
+    height: 70px;
+    width: 70px;
+}
+.carousel-indicators [aria-label="Slide 1"] { background: url('img/PUT YOUR IMAGE HERE.png') center/cover; }
+.carousel-indicators [aria-label="Slide 2"] { background: url('img/PUT YOUR IMAGE HERE (1).png') center/cover; }
+.carousel-indicators [aria-label="Slide 3"] { background: url('img/PUT YOUR IMAGE HERE (2).png') center/cover; }
+.carousel-indicators [aria-label="Slide 4"] { background: url('img/PUT YOUR IMAGE HERE (3).png') center/cover; }
+.carousel-indicators [aria-label="Slide 5"] { background: url('img/PUT YOUR IMAGE HERE (4).png') center/cover; }
+
+.carousel-control-prev, 
+.carousel-control-next {
+    background: none;
+    border: none;
+    width: 50px;
+    height: 70px;
+    top: auto;
+    bottom: 0;
+    transform: none;
+    opacity: 1;
+}
+
+.carousel-control-prev {
+    left: calc(50% - 250px);
+}
+
+.carousel-control-next {
+    right: calc(50% - 250px);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 0.7;
+}
+
+@media (max-width: 500px){
+    .carousel-control-prev {
+        left: calc(50% - 185px);
+    }
+    
+    .carousel-control-next {
+        right: calc(50% - 185px);
+    }
+    
+}
